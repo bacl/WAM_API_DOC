@@ -10,6 +10,7 @@ Samsung Wireless Audio Multiroom Control API Documentation
 
 Useful links:
 * [More details on Samsung Wireless Audio Multiroom (WAM) Research - moosy](https://sites.google.com/site/moosyresearch/projects/samsung_shape) 
+* [Samsung Multiroom Console Client - fhatz](https://gist.github.com/fhatz/f5645682f3f1d73583035980a921f59b)
  
 * * *
 
