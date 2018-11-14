@@ -18,19 +18,19 @@ Useful links:
 
 I recently bought a R1 speaker (WAM1500) I liked it so much I bought a second. They are great for my use case but:
 * it "refuses" to play with other devides 
-* the companion software is terrible ( android app ) ( and now I can guess that it will be always terrible, and it is not the android team fault). 
+* the companion software is terrible ( Android app ) ( and now I can guess that it will be always terrible, and it is not the Androids team fault). 
 
-I want to be able to
+I want to be able to:
 * control it without a phone (done)
 * start to play a playlist only with *one* push of a button or event (done)
 * send a URL with an audio stream to listen on the speaker (in future)
 
    
 At first glace the firmware has implemented the standards in this area, yet refuses to play width other devices. 
-After much diging in the wrong dirtections, I "acidentaly" found how the speacker is controled. 
-Every control comand is done with only a HTTP GET request (excluding spotify ). 
+After much diging in the wrong dirtections, I "accidentaly" found how the speacker is controlled. 
+Every control comand is done with only a HTTP GET request (excluding Spotify ). 
 This is for getting and setting data. 
-Apparently, without any security check. 
+Apparently, without **any security** check. 
 
 
 

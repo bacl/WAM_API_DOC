@@ -15,7 +15,38 @@ curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EAddSongsToMultiQueue%3C/name%3E%
 ```  
  Xml string decoded: 
 ```  
-<name>AddSongsToMultiQueue</name><p type="dec" name="count" val="7"/><p type="dec" name="totalcount" val="7"/><p type="str" name="position" val="last"/><p type="str" name="device_udn" val="uuid:xxxxxxxx-xxxxx-xxxxe-xxxxx-xxxxxxxxx"/><p type="str" name="objectid" val="1$4$0"/><p type="cdata" name="songtitle" val="empty"><![CDATA[musicName]]></p><p type="cdata" name="thumbnail" val="empty"><![CDATA[]]></p><p type="cdata" name="artist" val="empty"><![CDATA[]]></p><p type="str" name="objectid" val="1$4$6"/><p type="cdata" name="songtitle" val="empty"><![CDATA[Pulse8_Best of Chillstep Mix - April 2017 [1 Hour of Chillstep Music]]]></p><p type="cdata" name="thumbnail" val="empty"><![CDATA[]]></p><p type="cdata" name="artist" val="empty"><![CDATA[]]></p><p type="str" name="objectid" val="1$4$7"/><p type="cdata" name="songtitle" val="empty"><![CDATA[Pulse8_Journey Within - A Chillstep Dubstep Mix]]></p><p type="cdata" name="thumbnail" val="empty"><![CDATA[]]></p><p type="cdata" name="artist" val="empty"><![CDATA[]]></p><p type="str" name="objectid" val="1$4$1"/><p type="cdata" name="songtitle" val="empty"><![CDATA[Fusion Alchemist]]></p><p type="cdata" name="thumbnail" val="empty"><![CDATA[]]></p><p type="cdata" name="artist" val="empty"><![CDATA[Samaya]]></p><p type="str" name="objectid" val="1$4$2"/><p type="cdata" name="songtitle" val="empty"><![CDATA[Samaya - On Tribe Mixtape]]></p><p type="cdata" name="thumbnail" val="empty"><![CDATA[]]></p><p type="cdata" name="artist" val="empty"><![CDATA[Samaya]]></p><p type="str" name="objectid" val="1$4$3"/><p type="cdata" name="songtitle" val="empty"><![CDATA[Shivelight_Bassline Drift - Nature (Anchor Hill Remix)]]></p><p type="cdata" name="thumbnail" val="empty"><![CDATA[]]></p><p type="cdata" name="artist" val="empty"><![CDATA[]]></p><p type="str" name="objectid" val="1$4$4"/><p type="cdata" name="songtitle" val="empty"><![CDATA[Ukiyo - Calling]]></p><p type="cdata" name="thumbnail" val="empty"><![CDATA[]]></p><p type="cdata" name="artist" val="empty"><![CDATA[]]></p>
+<name>AddSongsToMultiQueue</name>
+<p type="dec" name="count" val="7"/>
+<p type="dec" name="totalcount" val="7"/>
+<p type="str" name="position" val="last"/>
+<p type="str" name="device_udn" val="uuid:xxxxxxxx-xxxxx-xxxxe-xxxxx-xxxxxxxxx"/>
+<p type="str" name="objectid" val="1$4$0"/>
+<p type="cdata" name="songtitle" val="empty"><![CDATA[musicName]]></p>
+<p type="cdata" name="thumbnail" val="empty"><![CDATA[]]></p>
+<p type="cdata" name="artist" val="empty"><![CDATA[]]></p>
+<p type="str" name="objectid" val="1$4$6"/>
+<p type="cdata" name="songtitle" val="empty"><![CDATA[Pulse8_Best of Chillstep Mix - April 2017 [1 Hour of Chillstep Music]]]></p>
+<p type="cdata" name="thumbnail" val="empty"><![CDATA[]]></p>
+<p type="cdata" name="artist" val="empty"><![CDATA[]]></p><p type="str" name="objectid" val="1$4$7"/>
+<p type="cdata" name="songtitle" val="empty"><![CDATA[Pulse8_Journey Within - A Chillstep Dubstep Mix]]></p>
+<p type="cdata" name="thumbnail" val="empty"><![CDATA[]]></p>
+<p type="cdata" name="artist" val="empty"><![CDATA[]]></p>
+<p type="str" name="objectid" val="1$4$1"/>
+<p type="cdata" name="songtitle" val="empty"><![CDATA[Fusion Alchemist]]></p>
+<p type="cdata" name="thumbnail" val="empty"><![CDATA[]]></p>
+<p type="cdata" name="artist" val="empty"><![CDATA[Samaya]]></p>
+<p type="str" name="objectid" val="1$4$2"/>
+<p type="cdata" name="songtitle" val="empty"><![CDATA[Samaya - On Tribe Mixtape]]></p>
+<p type="cdata" name="thumbnail" val="empty"><![CDATA[]]></p>
+<p type="cdata" name="artist" val="empty"><![CDATA[Samaya]]></p>
+<p type="str" name="objectid" val="1$4$3"/>
+<p type="cdata" name="songtitle" val="empty"><![CDATA[Shivelight_Bassline Drift - Nature (Anchor Hill Remix)]]></p>
+<p type="cdata" name="thumbnail" val="empty"><![CDATA[]]></p>
+<p type="cdata" name="artist" val="empty"><![CDATA[]]></p>
+<p type="str" name="objectid" val="1$4$4"/>
+<p type="cdata" name="songtitle" val="empty"><![CDATA[Ukiyo - Calling]]></p>
+<p type="cdata" name="thumbnail" val="empty"><![CDATA[]]></p>
+<p type="cdata" name="artist" val="empty"><![CDATA[]]></p>
 ```  
 
 Response:  
@@ -36,7 +67,11 @@ curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EDelAlarm%3C/name%3E%3Cp%20type=%
 ```  
  Xml string decoded: 
 ```  
-<name>DelAlarm</name><p type="dec" name="totaldelnum" val="1"/><p type="dec" name="index" val="0"/><p type="dec" name="index" val="-1"/><p type="dec" name="index" val="-1"/>
+<name>DelAlarm</name>
+<p type="dec" name="totaldelnum" val="1"/>
+<p type="dec" name="index" val="0"/>
+<p type="dec" name="index" val="-1"/>
+<p type="dec" name="index" val="-1"/>
 ```  
 
 Response:  
@@ -63,7 +98,19 @@ curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetAcmMode%3C/name%3E'
 Response:  
 
 ```  
-<?xml version="1.0" encoding="UTF-8"?><UIC><method>AcmMode</method><version>1.0</version><speakerip>ip_speaker</speakerip><user_identifier></user_identifier><response result="ok"><acmmode>aasync</acmmode><audiosourcemacaddr>00:00:00:00:00:00</audiosourcemacaddr><audiosourcename><![CDATA[]]></audiosourcename><audiosourcetype>none</audiosourcetype></response></UIC>
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+    <method>AcmMode</method>
+    <version>1.0</version>
+    <speakerip>ip_speaker</speakerip>
+    <user_identifier></user_identifier>
+    <response result="ok">
+        <acmmode>aasync</acmmode>
+        <audiosourcemacaddr>00:00:00:00:00:00</audiosourcemacaddr>
+        <audiosourcename><![CDATA[]]></audiosourcename>
+        <audiosourcetype>none</audiosourcetype>
+    </response>
+</UIC>
 ``` 
 
 ****
@@ -84,7 +131,17 @@ curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetAlarmInfo%3C/name%3E'
 Response:  
 
 ```  
---- 
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+    <method>AllAlarmInfo</method>
+    <version>1.0</version>
+    <speakerip>ip_speaker</speakerip>
+    <user_identifier></user_identifier>
+    <response result="ok">
+        <totalindexcount>0</totalindexcount>
+        <alarmList></alarmList>
+    </response>
+</UIC> 
 ``` 
 
 ****
@@ -105,7 +162,34 @@ curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetAlarmSoundList%3C/name%3E'
 Response:  
 
 ```  
-<?xml version="1.0" encoding="UTF-8"?><UIC><method>AlarmSoundList</method><version>1.0</version><speakerip>ip_speaker</speakerip><user_identifier></user_identifier><response result="ok"><listcount>4</listcount><alarmlist><alarmsound index="0"><alarsoundindex>0</alarsoundindex><alarmsoundname>Active Morning</alarmsoundname></alarmsound><alarmsound index="1"><alarsoundindex>1</alarsoundindex><alarmsoundname>Disco</alarmsoundname></alarmsound><alarmsound index="2"><alarsoundindex>2</alarsoundindex><alarmsoundname>Vintage</alarmsoundname></alarmsound><alarmsound index="3"><alarsoundindex>3</alarsoundindex><alarmsoundname>Waltz</alarmsoundname></alarmsound></alarmlist></response></UIC>
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+    <method>AlarmSoundList</method>
+    <version>1.0</version>
+    <speakerip>ip_speaker</speakerip>
+    <user_identifier></user_identifier>
+    <response result="ok">
+        <listcount>4</listcount>
+        <alarmlist>
+            <alarmsound index="0">
+                <alarsoundindex>0</alarsoundindex>
+                <alarmsoundname>Active Morning</alarmsoundname>
+            </alarmsound>
+            <alarmsound index="1">
+                <alarsoundindex>1</alarsoundindex>
+                <alarmsoundname>Disco</alarmsoundname>
+            </alarmsound>
+            <alarmsound index="2">
+                <alarsoundindex>2</alarsoundindex>
+                <alarmsoundname>Vintage</alarmsoundname>
+            </alarmsound>
+            <alarmsound index="3">
+                <alarsoundindex>3</alarsoundindex>
+                <alarmsoundname>Waltz</alarmsoundname>
+            </alarmsound>
+        </alarmlist>
+    </response>
+</UIC>
 ``` 
 
 ****
@@ -126,7 +210,27 @@ curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetApInfo%3C/name%3E'
 Response:  
 
 ```  
-<?xml version="1.0" encoding="UTF-8"?><UIC><method>ApInfo</method><version>1.0</version><speakerip>192.10.1.2</speakerip><user_identifier></user_identifier><response result="ok"><ssid><![CDATA[SSID_NAME]]></ssid><mac>xx:xx:xx:xx:xx:xx</mac><rssi>3</rssi><ch>1</ch><wifidirectssid><![CDATA[]]></wifidirectssid><wifidirectrssi></wifidirectrssi><wifidirectch></wifidirectch><connectiontype>wireless</connectiontype></response></UIC
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+    <method>ApInfo</method>
+    <version>1.0</version>
+    <speakerip>ip_speaker</speakerip>
+    <user_identifier></user_identifier>
+    <response result="ok">
+        <ssid>
+            <![CDATA[your name]]>
+        </ssid>
+        <mac>your mac</mac>
+        <rssi>4</rssi>
+        <ch>136</ch>
+        <wifidirectssid>
+            <![CDATA[]]>
+        </wifidirectssid>
+        <wifidirectrssi></wifidirectrssi>
+        <wifidirectch></wifidirectch>
+        <connectiontype>wireless</connectiontype>
+    </response>
+</UIC>
 ``` 
 
 ****
@@ -147,7 +251,16 @@ curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetAudioUI%3C/name%3E'
 Response:  
 
 ```  
---- 
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+    <method>AudioUI</method>
+    <version>1.0</version>
+    <speakerip>ip_speaker</speakerip>
+    <user_identifier></user_identifier>
+    <response result="ok">
+        <audioui>on</audioui>
+    </response>
+</UIC> 
 ``` 
 
 ****
@@ -168,7 +281,16 @@ curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetAutoUpdate%3C/name%3E'
 Response:  
 
 ```  
---- 
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+    <method>AutoUpdate</method>
+    <version>1.0</version>
+    <speakerip>ip_speaker</speakerip>
+    <user_identifier></user_identifier>
+    <response result="ok">
+        <autoupdate>on</autoupdate>
+    </response>
+</UIC> 
 ``` 
 
 ****
@@ -189,7 +311,17 @@ curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetAvSourceAll%3C/name%3E'
 Response:  
 
 ```  
---- 
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+    <method>AvSourceAll</method>
+    <version>1.0</version>
+    <speakerip>ip_speaker</speakerip>
+    <user_identifier></user_identifier>
+    <response result="ok">
+        <listcount>0</listcount>
+        <avsourcelist></avsourcelist>
+    </response>
+</UIC> 
 ``` 
 
 ****
@@ -236,7 +368,6 @@ Response:
     <liststartindex>0</liststartindex>
     <listcount>23</listcount>
     <cplist>
-        
         <cp>
             
             <cpid>0</cpid>
@@ -375,7 +506,16 @@ curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetCurrentMultiQueuelist%3C/name
 Response:  
 
 ```  
---- 
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+    <method>GetMultiQueueListResult</method>
+    <version>1.0</version>
+    <speakerip>ip_address</speakerip>
+    <user_identifier>public</user_identifier>
+    <response result="ng">
+        <errCode>Index Error</errCode>
+    </response>
+</UIC> 
 ``` 
 
 ****
@@ -459,7 +599,17 @@ curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetCurrentPlayTime%3C/name%3E'
 Response:  
 
 ```  
---- 
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+    <method>MusicPlayTime</method>
+    <version>1.0</version>
+    <speakerip>ip_address</speakerip>
+    <user_identifier>public</user_identifier>
+    <response result="ok">
+        <timelength>0</timelength>
+        <playtime>8122</playtime>
+    </response>
+</UIC> 
 ``` 
 
 ****
@@ -480,7 +630,21 @@ curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetFunc%3C/name%3E'
 Response:  
 
 ```  
---- 
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+    <method>CurrentFunc</method>
+    <version>1.0</version>
+    <speakerip>ip_address</speakerip>
+    <user_identifier></user_identifier>
+    <response result="ok">
+        <function>wifi</function>
+        <submode>cp</submode>
+        <connection></connection>
+        <devicename>
+            <![CDATA[]]>
+        </devicename>
+    </response>
+</UIC> 
 ``` 
 
 ****
@@ -501,7 +665,16 @@ curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetIcon%3C/name%3E'
 Response:  
 
 ```  
---- 
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+    <method>SpkIcon</method>
+    <version>1.0</version>
+    <speakerip>192.168.178.16</speakerip>
+    <user_identifier></user_identifier>
+    <response result="ok">
+        <icon>0</icon>
+    </response>
+</UIC> 
 ``` 
 
 ****
@@ -522,7 +695,16 @@ curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetLed%3C/name%3E'
 Response:  
 
 ```  
---- 
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+    <method>LedStatus</method>
+    <version>1.0</version>
+    <speakerip>192.168.178.16</speakerip>
+    <user_identifier></user_identifier>
+    <response result="ok">
+        <led>on</led>
+    </response>
+</UIC> 
 ``` 
 
 ****
@@ -543,7 +725,14 @@ curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetMainInfo%3C/name%3E'
 Response:  
 
 ```  
---- 
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+    <method>RequestDeviceInfo</method>
+    <version>1.0</version>
+    <speakerip>ip_address</speakerip>
+    <user_identifier>public</user_identifier>
+    <response result="ok"></response>
+</UIC> 
 ``` 
 
 ****
@@ -564,7 +753,16 @@ curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetMusicInfo%3C/name%3E'
 Response:  
 
 ```  
---- 
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+    <method>MusicInfo</method>
+    <version>1.0</version>
+    <speakerip>ip_address</speakerip>
+    <user_identifier></user_identifier>
+    <response result="ng">
+        <errCode>Wifi Sub Mode is CP</errCode>
+    </response>
+</UIC> 
 ``` 
 
 ****
@@ -606,7 +804,17 @@ curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetPlayStatus%3C/name%3E'
 Response:  
 
 ```  
---- 
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+    <method>PlayStatus</method>
+    <version>1.0</version>
+    <speakerip>ip_address</speakerip>
+    <user_identifier></user_identifier>
+    <response result="ok">
+        <function>wifi</function>
+        <submode>cp</submode>
+    </response>
+</UIC> 
 ``` 
 
 ****
@@ -669,7 +877,16 @@ curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetRepeatMode%3C/name%3E'
 Response:  
 
 ```  
---- 
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+    <method>RepeatMode</method>
+    <version>1.0</version>
+    <speakerip>ip_address</speakerip>
+    <user_identifier></user_identifier>
+    <response result="ok">
+        <repeat>off</repeat>
+    </response>
+</UIC> 
 ``` 
 
 ****
@@ -690,7 +907,16 @@ curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetShuffleMode%3C/name%3E'
 Response:  
 
 ```  
---- 
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+    <method>ShuffleMode</method>
+    <version>1.0</version>
+    <speakerip>ip_address</speakerip>
+    <user_identifier></user_identifier>
+    <response result="ok">
+        <shuffle>off</shuffle>
+    </response>
+</UIC> 
 ``` 
 
 ****
@@ -732,7 +958,17 @@ curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetSoftwareVersion%3C/name%3E'
 Response:  
 
 ```  
---- 
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+    <method>SoftwareVersion</method>
+    <version>1.0</version>
+    <speakerip>ip_address</speakerip>
+    <user_identifier></user_identifier>
+    <response result="ok">
+        <version>WAM1500WWB-3117.1</version>
+        <displayversion>WAM1500WWB-3117.1</displayversion>
+    </response>
+</UIC> 
 ``` 
 
 ****
@@ -753,7 +989,16 @@ curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetSpeakerBuyer%3C/name%3E'
 Response:  
 
 ```  
---- 
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+    <method>SpeakerBuyer</method>
+    <version>1.0</version>
+    <speakerip>ip_address</speakerip>
+    <user_identifier></user_identifier>
+    <response result="ok">
+        <buyer>ZF</buyer>
+    </response>
+</UIC> 
 ``` 
 
 ****
@@ -774,7 +1019,16 @@ curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetSpeakerWifiRegion%3C/name%3E'
 Response:  
 
 ```  
---- 
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+    <method>SpeakerWifiRegion</method>
+    <version>1.0</version>
+    <speakerip>ip_address</speakerip>
+    <user_identifier></user_identifier>
+    <response result="ok">
+        <wifi>E</wifi>
+    </response>
+</UIC> 
 ``` 
 
 ****
@@ -795,7 +1049,18 @@ curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetSpkName%3C/name%3E'
 Response:  
 
 ```  
---- 
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+    <method>SpkName</method>
+    <version>1.0</version>
+    <speakerip>ip_address</speakerip>
+    <user_identifier></user_identifier>
+    <response result="ok">
+        <spkname>
+            <![CDATA[Speaker Name Here]]>
+        </spkname>
+    </response>
+</UIC> 
 ``` 
 
 ****
@@ -816,7 +1081,20 @@ curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetSubSoftwareVersion%3C/name%3E
 Response:  
 
 ```  
---- 
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+    <method>SubSoftwareVersion</method>
+    <version>1.0</version>
+    <speakerip>ip_address</speakerip>
+    <user_identifier></user_identifier>
+    <response result="ok">
+        <Subversion1>181R</Subversion1>
+        <Subversion2>WAM1500WWT-1700</Subversion2>
+        <Subversion3>Not Available</Subversion3>
+        <Subversion4>Not Available</Subversion4>
+        <Subversion5>Not Available</Subversion5>
+    </response>
+</UIC> 
 ``` 
 
 ****
@@ -837,7 +1115,16 @@ curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetVolume%3C/name%3E'
 Response:  
 
 ```  
---- 
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+    <method>VolumeLevel</method>
+    <version>1.0</version>
+    <speakerip>ip_address</speakerip>
+    <user_identifier></user_identifier>
+    <response result="ok">
+        <volume>5</volume>
+    </response>
+</UIC> 
 ``` 
 
 ****
