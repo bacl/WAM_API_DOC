@@ -2284,5 +2284,174 @@ Response:
 
 ****
 
+### 90 - GetCandidateSpkList
+Description: ---
+
+Example:
+```
+curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetCandidateSpkList%3C/name%3E
+```
+
+Xml string decoded: 
+```  
+<name>GetCandidateSpkList</name>
+```  
+
+Response:  
+```
+<?xml version="1.0" ?>
+<UIC>
+	<method>CandidateSpkList</method>
+	<version>1.0</version>
+	<speakerip>192.168.1.130</speakerip>
+	<user_identifier>public</user_identifier>
+	<response result="ok">
+		<spknum>0</spknum>
+		<spklist/>
+	</response>
+</UIC>
+``` 
+
+****
+
+### 91 - GetWooferLevel
+Description: Get volume of subwoofer
+
+Example:
+```
+curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetWooferLevel%3C/name%3E
+```
+
+Xml string decoded: 
+```  
+<name>GetWooferLevel</name>
+```  
+
+Response:  
+```
+<?xml version="1.0" ?>
+<UIC>
+	<method>WooferLevel</method>
+	<version>1.0</version>
+	<speakerip>192.168.1.130</speakerip>
+	<user_identifier/>
+	<response result="ok">
+		<level>0</level>
+		<connection>on</connection>
+	</response>
+</UIC>
+``` 
+
+****
+
+### 92 - GetPowerStatus
+Description: Get power status of speaker
+
+Example:
+```
+curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetPowerStatus%3C/name%3E
+```
+
+Xml string decoded: 
+```  
+<name>GetPowerStatus</name>
+```  
+
+Response:  
+```
+<?xml version="1.0" ?>
+<UIC>
+	<method>PowerStatus</method>
+	<version>1.0</version>
+	<speakerip>192.168.1.130</speakerip>
+	<user_identifier>public</user_identifier>
+	<response result="ok">
+		<powerStatus>0</powerStatus>
+	</response>
+</UIC>
+``` 
+
+****
+
+
+### 93 - GetFeature
+Description: Get features of speaker
+
+Example:
+```
+curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetFeature%3C/name%3E
+```
+
+Xml string decoded: 
+```  
+<name>GetFeature</name>
+```  
+
+Response:  
+```
+<?xml version="1.0" ?>
+<UIC>
+	<method>Feature</method>
+	<version>1.0</version>
+	<speakerip>192.168.1.130</speakerip>
+	<user_identifier>public</user_identifier>
+	<response result="ok">
+		<arc>1</arc>
+		<audioprompt>0</audioprompt>
+		<aux>0</aux>
+		<bt>1</bt>
+		<btremotecontroller>0</btremotecontroller>
+		<din>1</din>
+		<dmr>1</dmr>
+		<installationtype>0</installationtype>
+		<miracast>1</miracast>
+		<multiroommc>1</multiroommc>
+		<multiroomms>1</multiroomms>
+		<musiccontentsprovider>1</musiccontentsprovider>
+		<numofchannel>3</numofchannel>
+		<numofhdmi>2</numofhdmi>
+		<stepofvolume>100</stepofvolume>
+		<usb>0</usb>
+		<wifidlna>1</wifidlna>
+		<wooferoption>2</wooferoption>
+		<inputmode>
+			<input func="avsource">
+				<notav>111</notav>
+				<av>111</av>
+			</input>
+			<input func="wifidlna">
+				<notav>111</notav>
+				<av>111</av>
+			</input>
+			<input func="bt">
+				<notav>111</notav>
+				<av>111</av>
+			</input>
+			<input func="aux">
+				<notav>000</notav>
+				<av>000</av>
+			</input>
+			<input func="hdmi">
+				<notav>111</notav>
+				<av>111</av>
+			</input>
+			<input func="optical">
+				<notav>111</notav>
+				<av>111</av>
+			</input>
+			<input func="coaxial">
+				<notav>000</notav>
+				<av>000</av>
+			</input>
+			<input func="usb">
+				<notav>000</notav>
+				<av>000</av>
+			</input>
+		</inputmode>
+	</response>
+</UIC>
+``` 
+
+****
 
 baclpt 2017/04/09
