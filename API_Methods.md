@@ -2454,3 +2454,33 @@ Response:
 
 ****
 
+
+
+### 94 - SetPlaybackUrl
+Description: play audio file from URL
+
+Example:
+```
+curl 'http://ip_speaker:55001/UIC?cmd=%3Cpwron%3Eon%3C/pwron%3E%3Cname%3ESetUrlPlayback%3C/name%3E%3Cp%20type=%22cdata%22%20name=%22url%22%20val=%22empty%22%3E%3C![CDATA[http://s3.amazonaws.com/smartapp-media/sonos/dogs.mp3]]%3E%3C/p%3E%3Cp%20type=%22dec%22%20name=%22buffersize%22%20val=%220%22/%3E%3Cp%20type=%22dec%22%20name=%22seektime%22%20val=%220%22/%3E%3Cp%20type=%22dec%22%20name=%22resume%22%20val=%221%22/%3E
+```
+
+Xml string decoded: 
+```  
+<pwron>on</pwron><name>SetUrlPlayback</name><p type="cdata" name="url" val="empty"><![CDATA[http://s3.amazonaws.com/smartapp-media/sonos/dogs.mp3]]></p><p type="dec" name="buffersize" val="0"/><p type="dec" name="seektime" val="0"/><p type="dec" name="resume" val="1"/>
+```  
+
+Response:  
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+	<method>PausePlaybackEvent</method>
+	<version>1.0</version>
+	<speakerip>ip_speaker</speakerip>
+	<user_identifier>public</user_identifier>
+	<response result="ok">
+		<playtime>10</playtime>
+	</response>
+</UIC>
+``` 
+
+****
