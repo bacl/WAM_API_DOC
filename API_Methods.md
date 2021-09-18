@@ -2453,4 +2453,37 @@ Response:
 ``` 
 
 ****
+****
+
+
+### 95 - GetGroupName
+Description: Get group name of speaker
+
+Example:
+```
+curl 'http://ip_speaker:55001/UIC?cmd=%3Cname%3EGetGroupName%3C/name%3E
+```
+
+Xml string decoded: 
+```  
+<name>GetGroupName</name>
+```  
+
+Response:  
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<UIC>
+	<method>GroupName</method>
+	<version>1.0</version>
+	<speakerip>IP_Address</speakerip>
+	<user_identifier></user_identifier>
+	<response result="ok">
+		<groupname>GROUPNAME</groupname>
+	</response>
+</UIC>
+``` 
+
+****
+
+
 
